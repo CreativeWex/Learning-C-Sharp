@@ -8,23 +8,23 @@ namespace MMMLab5
 {
     class Message
     {
-        public static void LeftTriangleMessage()
+        public static void LeftRectangleMessage()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("Left Triangle method: ");
+            Console.Write("Left Rectangle method: ");
             Console.ResetColor();
         }
 
-        public static void RightTriangleMessage()
+        public static void RightRectangleMessage()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("Right Triangle method: ");
+            Console.Write("Right Rectangle method: ");
             Console.ResetColor();
         }
-        public static void MiddleTriangleMessage()
+        public static void MiddleRectangleMessage()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("Middle Triangle method: ");
+            Console.Write("Middle Rectangle method: ");
             Console.ResetColor();
         }
         public static void SimpsonleMessage()
@@ -39,20 +39,20 @@ namespace MMMLab5
             Console.Write("Trapeze method: ");
             Console.ResetColor();
         }
-        public static void First()
+        public static void First(double a, double b)
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("\nFirst integral: ");
             Console.ResetColor();
-            Console.WriteLine("y = x^2 tan( x / 2 );");
+            Console.WriteLine($"y = x^2 tan( x / 2 );   [{a}; {b}]");
             Console.WriteLine("\n-----------------Results-----------------\n");
         }
-        public static void Second()
+        public static void Second(double a, double b)
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("\nSecond integral: ");
             Console.ResetColor();
-            Console.WriteLine("y = exp( -x^2 );");
+            Console.WriteLine($"y = exp( -x^2 );   [{a}; {b}]");
             Console.WriteLine("\n-----------------Results-----------------\n");
         }
     }

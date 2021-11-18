@@ -16,13 +16,13 @@ namespace MMMLab5
         {
             return (Math.Exp(-x * x));
         }
-        public static double LeftTriangleMethod(double a, double b, int iterationsNumber, Func<double, double> Calculate)
+        public static double LeftRectangleMethod(double a, double b, int iterationsNumber, Func<double, double> Calculate)
         {
             double functionResult = 0;
             double h = (b - a) / iterationsNumber;
             double x = a;
 
-            Message.LeftTriangleMessage();
+            Message.LeftRectangleMessage();
 
             for (int i = 0; i < iterationsNumber; i++)
             {
@@ -31,13 +31,13 @@ namespace MMMLab5
             }
             return functionResult * h;
         }
-        public static double RightTriangleMethod(double a, double b, int iterationsNumber, Func<double, double> Calculate)
+        public static double RightRectangleMethod(double a, double b, int iterationsNumber, Func<double, double> Calculate)
         {
             double functionResult = 0;
             double h = (b - a) / iterationsNumber;
             double x = a + h;
 
-            Message.RightTriangleMessage();
+            Message.RightRectangleMessage();
 
             for (int i = 0; i <= iterationsNumber; i++)
             {
@@ -46,13 +46,13 @@ namespace MMMLab5
             }
             return functionResult * h;
         }
-        public static double MiddleTriangleMethod(double a, double b, int iterationsNumber, Func<double, double> Calculate)
+        public static double MiddleRectangleMethod(double a, double b, int iterationsNumber, Func<double, double> Calculate)
         {
             double functionResult = 0;
             double h = (b - a) / iterationsNumber;
             double x = a;
 
-            Message.MiddleTriangleMessage();
+            Message.MiddleRectangleMessage();
 
             for (int i = 0; i < iterationsNumber; i++)
             {
